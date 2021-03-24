@@ -7,7 +7,6 @@ extern "C" void cppsayhello(char * str);
 extern "C" void add_to_vector(int n);
 extern "C" void del_from_vector();
 extern "C" void print_vector();
-extern "C" vector<int> get_vector();
 
 void cppsayhello(char * str)
 {
@@ -29,8 +28,4 @@ void print_vector()
 void del_from_vector()
 {
 	V.pop_back();
-}
-vector<int> get_vector()
-{
-	return V;
 }
