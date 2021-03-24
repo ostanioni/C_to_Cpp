@@ -13,14 +13,14 @@ void cppsayhello(char * str)
 	std::cout << str << "\n";
 }
 
-vector<int> V = {1,2,3};
+vector<int> V {1,2,3};
 void add_to_vector(int n)
 {
 	V.push_back(n);
 }
 void print_vector()
 {
-	for (int i: V){
+	for (auto i: V){
 		cout << i << ", ";
 	}
 	cout << "\n";
